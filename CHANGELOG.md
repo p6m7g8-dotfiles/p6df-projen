@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.1](https://github.com/p6m7g8/p6df-projen/compare/v1.1.0...v1.1.1) (2021-04-04)
+
+
+### Features
+
+* **api:** `+p6df::modules::projen::pr::rebuild` ([#12](https://github.com/p6m7g8/p6df-projen/issues/12)) ([bdcff06](https://github.com/p6m7g8/p6df-projen/commit/bdcff06ed80ab9349e012ef522accae2bdd645c0))
+
 ## 1.1.0 (2020-12-06)
 
 
