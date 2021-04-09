@@ -45,6 +45,7 @@
 #### p6df-projen/init.zsh:
 
 - p6df::modules::projen::awesome::build()
+- p6df::modules::projen::awesome::clones()
 - p6df::modules::projen::awesome::deltas()
 - p6df::modules::projen::awesome::submit()
 - p6df::modules::projen::awesome::synthesize()
@@ -53,7 +54,7 @@
 - p6df::modules::projen::deps()
 - p6df::modules::projen::init()
 - p6df::modules::projen::langs()
-- p6df::modules::projen::pr::rebuild(pr)
+
 
 
 ## Author

@@ -33,27 +33,27 @@ p6df::modules::projen::langs() {
 #
 # Function: p6df::modules::projen::init()
 #
+#  Environment:	 P6_DFZ_SRC_P6M7G8_DIR
 #>
 ######################################################################
 p6df::modules::projen::init() {
 
-  alias pjp="$P6_DFZ_SRC_DIR/pgollucci/projen/bin/projen"
+  alias pjp="$P6_DFZ_SRC_P6M7G8_DIR/pgollucci/projen/bin/projen"
 }
 
 ######################################################################
 #<
 #
-# Function: p6df::modules::projen::pr::rebuild(pr)
-#
-#  Args:
-#	pr -
+# Function: p6df::modules::projen::awesome::clones()
 #
 #>
 ######################################################################
-p6df::modules::projen::pr::rebuild() {
-  local pr="$1"
+p6df::modules::projen::awesome::clones() {
 
-  p6_github_gh_pr_comment "$pr" "@projen rebuild"
+  local projects
+  projects=$(p6_projen_awesome_projects_collect)
+
+  p6_projen_util_foreach "$projects" "clone"
 }
 
 ######################################################################
