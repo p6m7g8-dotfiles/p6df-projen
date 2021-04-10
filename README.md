@@ -46,6 +46,7 @@
 
 - p6df::modules::projen::aliases::init()
 - p6df::modules::projen::deps()
+- p6df::modules::projen::find(orgs_or_users, repository, owner, name, count)
 - p6df::modules::projen::init()
 - p6df::modules::projen::langs()
 
