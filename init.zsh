@@ -49,7 +49,19 @@ p6df::modules::projen::init() {
 ######################################################################
 p6df::modules::projen::aliases::init() {
 
-  alias pjp="$P6_DFZ_SRC_FORKED8_DIR/pgollucci/projen/bin/projen"
+  alias pjp="$P6_DFZ_SRC_FORKED_DIR/pgollucci/projen/bin/projen"
+
+  alias pgjn='projen new'
+  alias pgjv='projen --version'
+
+  alias pj='npx projen'
+  alias pjv='pj --version'
+
+  alias pjb='pj build'
+  alias pjdd='pj diff'
+  alias pjd='pj deploy'
+  alias pjD='pj destroy'
+  # XXX completions
 }
 
 ######################################################################
