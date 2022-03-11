@@ -49,8 +49,6 @@ p6df::modules::projen::init() {
 ######################################################################
 p6df::modules::projen::aliases::init() {
 
-  alias pjp="$P6_DFZ_SRC_FORKED_DIR/pgollucci/projen/bin/projen"
-
   alias pgjn='projen new'
   alias pgjv='projen --version'
 
