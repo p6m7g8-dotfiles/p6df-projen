@@ -22,8 +22,7 @@ p6df::modules::projen::deps() {
 ######################################################################
 p6df::modules::projen::langs() {
 
-  npm uninstall -g projen
-  npm install -g projen
+  p6_js_npm_global_install "projen"
 }
 
 ######################################################################
