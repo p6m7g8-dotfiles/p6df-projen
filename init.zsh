@@ -7,8 +7,8 @@
 ######################################################################
 p6df::modules::projen::deps() {
   ModuleDeps=(
-    p6m7g8/p6projen
-    p6m7g8/p6df-js
+    p6m7g8-dotfiles/p6projen
+    p6m7g8-dotfiles/p6df-js
     ohmyzsh/ohmyzsh:plugins/projen
   )
 }
@@ -43,7 +43,6 @@ p6df::modules::projen::init() {
 # Function: p6df::modules::projen::aliases::init()
 #
 #  Depends:	 p6_h1
-#  Environment:	 P6_DFZ_SRC_P6M7G8_DIR
 #>
 ######################################################################
 p6df::modules::projen::aliases::init() {
