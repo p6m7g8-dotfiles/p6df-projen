@@ -7,8 +7,8 @@
 ######################################################################
 p6df::modules::projen::deps() {
   ModuleDeps=(
-    p6m7g8/p6projen
-    p6m7g8/p6df-js
+    p6m7g8-dotfiles/p6projen
+    p6m7g8-dotfiles/p6df-js
     ohmyzsh/ohmyzsh:plugins/projen
   )
 }
