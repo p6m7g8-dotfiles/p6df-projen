@@ -7,8 +7,8 @@
 ######################################################################
 p6df::modules::projen::deps() {
   ModuleDeps=(
-    p6m7g8-dotfiles/p6projen
     p6m7g8-dotfiles/p6df-js
+    p6m7g8-dotfiles/p6projen
     ohmyzsh/ohmyzsh:plugins/projen
   )
 }
@@ -42,7 +42,7 @@ p6df::modules::projen::init() {
 #
 # Function: p6df::modules::projen::aliases::init()
 #
-#  Depends:	 p6_h1
+#  Environment:	 XXX
 #>
 ######################################################################
 p6df::modules::projen::aliases::init() {
@@ -72,7 +72,6 @@ p6df::modules::projen::aliases::init() {
 #	name -
 #	count -
 #
-#  Depends:	 p6_h1 p6_run
 #  Environment:	 API HEAD
 #>
 ######################################################################
