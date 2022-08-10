@@ -1,3 +1,4 @@
+# shellcheck shell=bash
 ######################################################################
 #<
 #
@@ -23,6 +24,8 @@ p6df::modules::projen::deps() {
 p6df::modules::projen::langs() {
 
   p6_js_npm_global_install "projen"
+
+  p6_return_void
 }
 
 ######################################################################
@@ -35,6 +38,8 @@ p6df::modules::projen::langs() {
 p6df::modules::projen::init() {
 
   p6df::modules::projen::aliases::init
+
+  p6_return_void
 }
 
 ######################################################################
@@ -58,6 +63,8 @@ p6df::modules::projen::aliases::init() {
   alias pjd='pj deploy'
   alias pjD='pj destroy'
   # XXX completions
+
+  p6_return_void
 }
 
 ######################################################################
