@@ -31,20 +31,6 @@ p6df::modules::projen::langs() {
 ######################################################################
 #<
 #
-# Function: p6df::modules::projen::init()
-#
-#>
-######################################################################
-p6df::modules::projen::init() {
-
-  p6df::modules::projen::aliases::init
-
-  p6_return_void
-}
-
-######################################################################
-#<
-#
 # Function: p6df::modules::projen::aliases::init()
 #
 #  Environment:	 XXX
@@ -62,7 +48,6 @@ p6df::modules::projen::aliases::init() {
   alias pjdd='pj diff'
   alias pjd='pj deploy'
   alias pjD='pj destroy'
-  # XXX completions
 
   p6_return_void
 }
