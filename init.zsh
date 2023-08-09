@@ -10,7 +10,7 @@ p6df::modules::projen::deps() {
   ModuleDeps=(
     p6m7g8-dotfiles/p6df-js
     p6m7g8-dotfiles/p6projen
-    ohmyzsh/ohmyzsh:plugins/projen
+    p6m7g8/p6-zsh-projen-plugin
   )
 }
 
@@ -24,30 +24,6 @@ p6df::modules::projen::deps() {
 p6df::modules::projen::langs() {
 
   p6_js_npm_global_install "projen"
-
-  p6_return_void
-}
-
-######################################################################
-#<
-#
-# Function: p6df::modules::projen::aliases::init()
-#
-#  Environment:	 XXX
-#>
-######################################################################
-p6df::modules::projen::aliases::init() {
-
-  alias pgjn='projen new'
-  alias pgjv='projen --version'
-
-  alias pj='npx projen'
-  alias pjv='pj --version'
-
-  alias pjb='pj build'
-  alias pjdd='pj diff'
-  alias pjd='pj deploy'
-  alias pjD='pj destroy'
 
   p6_return_void
 }
