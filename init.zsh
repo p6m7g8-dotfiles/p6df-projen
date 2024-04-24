@@ -55,7 +55,7 @@ p6df::modules::projen::find() {
       repositories=$(gh repo list "$org_or_user" --source --limit 1000 2>&1 | awk '{print $1}' | sort)
       if [ x"API" = x"$repositories" ]; then
         while [ 1 ]; do
-          sleep $(echo $(gh api /rate_limit -q ".resources.graphql.reset")-$(perl -e 'print time()') | bc -lq)
+          sleep $(awk -v reset=$(gh api /rate_limit -q ".resources.graphql.reset") -v now=$(date +%s) 'BEGIN { print reset - now }')
         done
       else
         break
