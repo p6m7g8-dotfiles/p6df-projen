@@ -68,8 +68,8 @@ p6df::modules::projen::find() {
 find_projen_repositories() {
   local repository="$1"
 
-  local owner=$(echo "$repository" | cut -d / -f 1)
-  local name=$(echo "$repository" | cut -d / -f 2)
+  local owner=$(p6_echo "$repository" | cut -d / -f 1)
+  local name=$(p6_echo "$repository" | cut -d / -f 2)
 
   local count=$(gh api graphql -F owner=$owner -F name=$name -q ".data.repository.object.entries[].name" -f query='
   query($name: String!, $owner: String!) {
@@ -84,7 +84,7 @@ find_projen_repositories() {
   }
 }' | grep -c projenrc)
 
-  echo >&2 "$owner/$name: $count"
+  p6_echo >&2 "$owner/$name: $count"
 
   p6_return_void
 }
